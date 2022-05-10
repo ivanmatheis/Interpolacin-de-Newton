@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Interpolacin_de_Newton.Form1
+            Me.MainForm = Global.Interpolacin_de_Newton.InterpolacionNewton
         End Sub
     End Class
 End Namespace

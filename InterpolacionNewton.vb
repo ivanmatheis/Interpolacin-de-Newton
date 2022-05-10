@@ -1,6 +1,6 @@
-﻿Public Class Form1
+﻿Public Class InterpolacionNewton
     Dim i, c, redon, n, ib As Integer
-    Dim x(), y(), vx, vy, s, m As Single
+    Dim x(), y(), vx, vy, s, m, cs(), dy() As Single
     Private Sub Salir_Click(sender As Object, e As EventArgs) Handles Salir.Click
         End
     End Sub
@@ -35,6 +35,11 @@
         ts.Text = s
         m = n - (ib + 1)
         tm.Text = m
+        ReDim cs(0 To m)
+        cs(0) = 1
+        ReDim dy(0 To m)
+        dy(0) = y(ib)
+        Salida2.Rows.Add(cs(0), dy(0))
 
     End Sub
 End Class

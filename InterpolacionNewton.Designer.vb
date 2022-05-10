@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class InterpolacionNewton
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,9 +22,9 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -46,7 +46,7 @@ Partial Class Form1
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Chart1 = New System.Windows.Forms.DataVisualization.Charting.Chart()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.Salida2 = New System.Windows.Forms.DataGridView()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Calcular = New System.Windows.Forms.Button()
@@ -59,7 +59,7 @@ Partial Class Form1
         Me.tm = New System.Windows.Forms.TextBox()
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Salida2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -198,28 +198,28 @@ Partial Class Form1
         '
         'Chart1
         '
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart1.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart1.Legends.Add(Legend1)
+        ChartArea2.Name = "ChartArea1"
+        Me.Chart1.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.Chart1.Legends.Add(Legend2)
         Me.Chart1.Location = New System.Drawing.Point(596, 12)
         Me.Chart1.Name = "Chart1"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart1.Series.Add(Series1)
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Series1"
+        Me.Chart1.Series.Add(Series2)
         Me.Chart1.Size = New System.Drawing.Size(300, 300)
         Me.Chart1.TabIndex = 11
         Me.Chart1.Text = "Chart1"
         '
-        'DataGridView2
+        'Salida2
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column7})
-        Me.DataGridView2.Location = New System.Drawing.Point(617, 347)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(242, 151)
-        Me.DataGridView2.TabIndex = 12
+        Me.Salida2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Salida2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column7})
+        Me.Salida2.Location = New System.Drawing.Point(617, 347)
+        Me.Salida2.Name = "Salida2"
+        Me.Salida2.Size = New System.Drawing.Size(242, 151)
+        Me.Salida2.TabIndex = 12
         '
         'Column6
         '
@@ -312,7 +312,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Limpiar)
         Me.Controls.Add(Me.Graficar)
         Me.Controls.Add(Me.Calcular)
-        Me.Controls.Add(Me.DataGridView2)
+        Me.Controls.Add(Me.Salida2)
         Me.Controls.Add(Me.Chart1)
         Me.Controls.Add(Me.Salida)
         Me.Controls.Add(Me.ibb)
@@ -329,7 +329,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.Salida, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Salida2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -347,7 +347,7 @@ Partial Class Form1
     Friend WithEvents ibb As TextBox
     Friend WithEvents Salida As DataGridView
     Friend WithEvents Chart1 As DataVisualization.Charting.Chart
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents Salida2 As DataGridView
     Friend WithEvents Calcular As Button
     Friend WithEvents Graficar As Button
     Friend WithEvents Limpiar As Button
